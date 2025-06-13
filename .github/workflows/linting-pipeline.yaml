@@ -25,4 +25,4 @@ jobs:
         run: npx htmlhint "**/*.html"
 
       - name: Run Stylelint
-        run: npx --yes stylelint "**/*.css"
+        run: npx --no-install ./node_modules/.bin/stylelint "**/*.css"
